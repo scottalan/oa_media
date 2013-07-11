@@ -93,4 +93,4 @@ features[variable][] = colorbox_transition_speed
 features[variable][] = colorbox_transition_type
 features[variable][] = colorbox_visibility
 features[variable][] = field_bundle_settings_file__document
-project path = profiles/openatrium/modules/features
+project path = sites/all/modules/contrib

@@ -3,7 +3,7 @@ core = 7.x
 
 ; Colorbox
 projects[colorbox][subdir] = contrib
-projects[colorbox][version] = 2.3
+projects[colorbox][version] = 2.4
 
 projects[media_colorbox][subdir] = contrib
 projects[media_colorbox][version] = 1.0-rc3

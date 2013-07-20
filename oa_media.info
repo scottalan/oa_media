@@ -16,6 +16,7 @@ dependencies[] = media_youtube
 dependencies[] = panelizer
 dependencies[] = strongarm
 dependencies[] = text
+stylesheets[all][] = oa_media.css
 features[ctools][] = file_entity:file_default_displays:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

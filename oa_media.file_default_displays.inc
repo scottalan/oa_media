@@ -772,12 +772,19 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__colorbox__media_vimeo_video';
-  $file_display->weight = -48;
+  $file_display->weight = 2;
   $file_display->status = TRUE;
   $file_display->settings = array(
     'width' => '560',
     'height' => '340',
+    'color' => '',
+    'protocol' => 'http://',
     'autoplay' => 0,
+    'loop' => 0,
+    'title' => 1,
+    'byline' => 1,
+    'portrait' => 1,
+    'api' => 0,
   );
   $export['video__colorbox__media_vimeo_video'] = $file_display;
 
@@ -794,16 +801,24 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__colorbox__media_youtube_video';
-  $file_display->weight = -49;
+  $file_display->weight = 0;
   $file_display->status = TRUE;
   $file_display->settings = array(
-    'theme' => 'dark',
     'width' => '560',
     'height' => '340',
+    'theme' => 'dark',
+    'color' => 'red',
+    'autohide' => '2',
     'autoplay' => 0,
-    'related' => 1,
-    'modestbranding' => 0,
+    'loop' => 0,
     'showinfo' => 1,
+    'modestbranding' => 0,
+    'rel' => 1,
+    'nocookie' => 0,
+    'protocol_specify' => 0,
+    'protocol' => 'https:',
+    'enablejsapi' => 0,
+    'origin' => '',
   );
   $export['video__colorbox__media_youtube_video'] = $file_display;
 
@@ -854,7 +869,7 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__default__file_field_media_colorbox';
-  $file_display->weight = -43;
+  $file_display->weight = 4;
   $file_display->status = FALSE;
   $file_display->settings = array(
     'file_view_mode' => 'ical',
@@ -871,7 +886,7 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__default__file_field_media_large_icon';
-  $file_display->weight = -40;
+  $file_display->weight = -41;
   $file_display->status = FALSE;
   $file_display->settings = '';
   $export['video__default__file_field_media_large_icon'] = $file_display;
@@ -879,7 +894,7 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__default__file_field_oa_media_formatter';
-  $file_display->weight = -41;
+  $file_display->weight = -42;
   $file_display->status = FALSE;
   $file_display->settings = array(
     'image_style' => 'thumbnail',
@@ -889,7 +904,7 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__default__file_image';
-  $file_display->weight = -42;
+  $file_display->weight = -43;
   $file_display->status = FALSE;
   $file_display->settings = array(
     'image_style' => '',
@@ -901,7 +916,7 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__default__media_youtube_image';
-  $file_display->weight = -44;
+  $file_display->weight = 1;
   $file_display->status = TRUE;
   $file_display->settings = array(
     'image_style' => 'panopoly_image_video',
@@ -928,7 +943,7 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__preview__media_vimeo_image';
-  $file_display->weight = -49;
+  $file_display->weight = 2;
   $file_display->status = TRUE;
   $file_display->settings = array(
     'image_style' => 'panopoly_image_thumbnail',
@@ -1029,7 +1044,7 @@ function oa_media_file_default_displays() {
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__teaser__media_youtube_image';
-  $file_display->weight = -40;
+  $file_display->weight = 1;
   $file_display->status = TRUE;
   $file_display->settings = array(
     'image_style' => 'panopoly_image_video',

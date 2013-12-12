@@ -919,7 +919,7 @@ function oa_media_file_default_displays() {
   $file_display->weight = 1;
   $file_display->status = TRUE;
   $file_display->settings = array(
-    'image_style' => 'panopoly_image_video',
+    'image_style' => '',
   );
   $export['video__default__media_youtube_image'] = $file_display;
 
